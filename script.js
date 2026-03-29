@@ -15,7 +15,6 @@ window.addEventListener("load", () => {
 });
 
 coverterForm.addEventListener("submit", convertCurrencies);
-// Still need these to update the dropdown lists (filtering)
 fromCurrencyInput.addEventListener("input", updateLists);
 toCurrencyInput.addEventListener("input", updateLists);
 swapBtn.addEventListener("click", swapCurrencies);
@@ -33,7 +32,7 @@ async function fetchCurrencies() {
 
             return {
                 code: code,
-                display: `${code} - ${fullName}` // No flag, just text
+                display: `${code} - ${fullName}` 
             };
         });
         
